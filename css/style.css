@@ -1,0 +1,194 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    background-color: black;
+
+
+
+
+}
+
+body {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+.hide {
+
+
+
+    display: none;
+
+
+}
+
+
+
+
+/* ENTER WINDOW */
+
+#naslov {
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid white;
+    width: 500px;
+    height: 150px;
+
+
+
+
+}
+
+#enter {
+
+
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid white;
+    width: 300px;
+    height: 100px;
+    margin: 50px;
+    margin-left: 100px;
+
+
+
+}
+
+#startAgain {
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    border: 2px solid white;
+    width: 300px;
+    height: 100px;
+    margin: 50px;
+    margin-left: 100px;
+
+
+
+}
+
+
+
+/* ---------- */
+#MyFirstGame {
+
+
+
+    width: 90%;
+    height: 80vh;
+    border: 2px solid white;
+    background-color: black;
+
+
+
+}
+
+#player {
+
+    width: 100px;
+    height: 250px;
+    background-color: white;
+    position: relative;
+    top: 295px;
+    animation: jump 500ms infinite;
+
+}
+
+#obstacle {
+
+
+    width: 100px;
+    height: 80px;
+    background-color: red;
+    position: relative;
+    top: 212px;
+    left: 1200px;
+
+}
+
+.animacija {
+
+
+    animation: obstacle 0.7s infinite linear;
+
+
+
+}
+
+
+
+/* Animacije  */
+
+@keyframes obstacle {
+
+    0% {
+        left: 1200px;
+    }
+
+    100% {
+        left: -180px
+    }
+
+}
+
+@keyframes jump {
+
+    0% {
+        top: 300px;
+    }
+
+    30% {
+
+
+        top: 200px;
+
+    }
+
+    70% {
+
+
+
+
+        top: 150px;
+    }
+
+    100% {
+
+
+        top: 200px;
+
+
+    }
+
+
+}
