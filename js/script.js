@@ -12,31 +12,6 @@ function enter() {
 
 
 
-
-var player = document.getElementById("player");
-
-var obstacle = document.getElementById("obstacle");
-
-function jump() {
-
-
-    if (player.classList != "animacija") {
-
-
-        player.classList.add("animacija");
-
-
-    }
-
-    setTimeout(function () {
-
-
-        player.classList.remove("animacija");
-
-    }, 500);
-
-}
-
 var checkFail = setInterval(function () {
 
 
@@ -49,9 +24,8 @@ var checkFail = setInterval(function () {
 
     var enter = document.getElementById("enter");
 
-    var startAgain = document.getElementById("startAgain");
 
-    if (obstacleLeft < 100 && obstacleLeft > 0 && playerTop >= 160) {
+    if (obstacleLeft < 30 && obstacleLeft > 0 && playerTop >= 160) {
 
 
 
@@ -69,7 +43,7 @@ var checkFail = setInterval(function () {
             obstacle.classList.add("animacija")
 
 
-        }, 3000)
+        }, 2000)
 
 
     }
@@ -79,3 +53,26 @@ var checkFail = setInterval(function () {
 
 
 }, 10);
+
+
+var player = document.getElementById("player");
+
+player.addEventListener("click", function () {
+
+
+
+
+    player.classList.add("animacija1");
+
+
+
+
+    setTimeout(function () {
+
+
+        player.classList.remove("animacija1");
+
+    }, 500);
+
+
+});
